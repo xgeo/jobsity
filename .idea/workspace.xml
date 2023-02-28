@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ada48ff-0761-4365-bab9-45ae4f3b9ffe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/Jobs/EmailSenderJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/Jobs/EmailSenderJob.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/core" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/database" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/datasource" />
+      <path value="$PROJECT_DIR$/src/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/src/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/src/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/src/vendor/php-di/slim-bridge" />
+      <path value="$PROJECT_DIR$/src/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/src/vendor/nyholm/psr7-server" />
+      <path value="$PROJECT_DIR$/src/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/src/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/src/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/src/vendor/slim/php-view" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/src/vendor/http-interop/http-factory-guzzle" />
+      <path value="$PROJECT_DIR$/src/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/src/vendor/sapphirecat/slim4-http-interop-adapter" />
+      <path value="$PROJECT_DIR$/src/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/src/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/src/vendor/robmorgan/phinx" />
+      <path value="$PROJECT_DIR$/src/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/src/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/src/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/src/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/src/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/src/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/src/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/src/vendor/tuupola/http-factory" />
+      <path value="$PROJECT_DIR$/src/vendor/tuupola/slim-jwt-auth" />
+      <path value="$PROJECT_DIR$/src/vendor/tuupola/callable-handler" />
+      <path value="$PROJECT_DIR$/src/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/src/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/src/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/src/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/src/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/src/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/src/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/src/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/src/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/src/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/src/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/src/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/src/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/utility" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2MBPUCIfhmV7a3iQtjOWaHWiq69" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xgeo/Projects/jobsity/src&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/public/swagger" />
+      <recent name="$PROJECT_DIR$/src/public" />
+      <recent name="$PROJECT_DIR$/src/app/Api" />
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/src/resources/storage/data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="$PROJECT_DIR$/gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="$PROJECT_DIR$/src/api.json" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yaml.rabbitmq: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ada48ff-0761-4365-bab9-45ae4f3b9ffe" name="Changes" comment="" />
+      <created>1677238017161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677238017161</updated>
+      <workItem from="1677238018413" duration="16251000" />
+      <workItem from="1677274485771" duration="22349000" />
+      <workItem from="1677322349058" duration="70711000" />
+      <workItem from="1677527663137" duration="36306000" />
+    </task>
+    <servers />
+  </component>
+</project>

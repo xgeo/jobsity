@@ -1,0 +1,154 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Jobsity API",
+        "description": "Jobsity",
+        "version": "0.1"
+    },
+    "paths": {
+        "/history": {
+            "get": {
+                "tags": [
+                    "Stocks"
+                ],
+                "description": "",
+                "operationId": "getHistories",
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/stock": {
+            "get": {
+                "tags": [
+                    "Stocks"
+                ],
+                "description": "",
+                "operationId": "getStock",
+                "parameters": [
+                    {
+                        "parameter": "q",
+                        "name": "q",
+                        "in": "query",
+                        "description": "Stock code",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "label": "Stock Code"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/user/auth": {
+            "post": {
+                "tags": [
+                    "Users"
+                ],
+                "description": "User Authentication",
+                "operationId": "auth",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                }
+            }
+        },
+        "/user": {
+            "post": {
+                "tags": [
+                    "Users"
+                ],
+                "description": "Create a new user",
+                "operationId": "store",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "format": "email"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "An example resource"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "name": "Authorization",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    },
+    "security": [
+        {
+            "bearerAuth": []
+        }
+    ],
+    "tags": [
+        {
+            "name": "Stocks"
+        },
+        {
+            "name": "Users"
+        }
+    ]
+}

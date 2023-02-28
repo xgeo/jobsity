@@ -1,0 +1,8 @@
+src/vendor
+rabbitmq-data/*
+database/*
+src/resources/storage/data/*
+src/resources/logs/*
+.vscode/
+idea
+.env

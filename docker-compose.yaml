@@ -1,0 +1,112 @@
+version: '3.9'
+services:
+  apache:
+    container_name: 'JOBSITY_SERVER'
+    build: .
+    ports:
+      - "8001:80"
+    working_dir: "/var/www/html"
+    volumes:
+      - ./src:/var/www/html/
+    links:
+      - postgres
+    networks:
+      - jobsity
+  postgres:
+    container_name: 'JOBSITY_POSTGRESQL'
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "jobsity321"
+      POSTGRES_DB: "jobsity_db"
+      POSTGRES_USER: "jobsity_user_db"
+    ports:
+      - "15432:5432"
+    volumes:
+      - ./database/data:/var/lib/postgresql/data
+    networks:
+      - jobsity
+  pgadmin:
+    container_name: 'JOBSITY_PG_ADMIN'
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "jobsity@mail.com"
+      PGADMIN_DEFAULT_PASSWORD: "jobsity321"
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres
+    networks:
+      - jobsity
+  rabbitmq:
+    container_name: 'JOBSITY_MESSAGE_BROKER'
+    image: rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:15672" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    volumes:
+      - ./rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - jobsity
+  composer:
+    build: .
+    entrypoint: composer install
+    working_dir: "/var/www/html"
+    container_name: 'JOBSITY_COMPOSER_INSTALL'
+    volumes:
+      - ./src:/var/www/html/
+    depends_on:
+      apache:
+        condition: service_started
+  migrate:
+    build: .
+    entrypoint: vendor/bin/phinx migrate
+    working_dir: "/var/www/html"
+    container_name: 'JOBSITY_MIGRATE'
+    volumes:
+      - ./src:/var/www/html/
+    depends_on:
+      apache:
+        condition: service_started
+      composer:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_started
+    networks:
+      - jobsity
+  queue:
+    build: .
+    working_dir: "/var/www/html"
+    restart: unless-stopped
+    entrypoint: php queue.php
+    container_name: 'JOBSITY_QUEUE'
+    volumes:
+      - ./src:/var/www/html/
+    depends_on:
+      composer:
+        condition: service_completed_successfully
+      rabbitmq:
+        condition: service_started
+    networks:
+      - jobsity
+  phpunit:
+    build: .
+    entrypoint: vendor/bin/phpunit tests/
+    working_dir: "/var/www/html"
+    container_name: 'JOBSITY_PHPUNIT'
+    volumes:
+      - ./src:/var/www/html/
+    depends_on:
+      apache:
+        condition: service_started
+      migrate:
+        condition: service_started
+      composer:
+        condition: service_completed_successfully
+networks:
+  jobsity:
+    external: true

@@ -1,0 +1,42 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Jobsity API",
+        "description": "Jobsity",
+        "version": "0.1"
+    },
+    "paths": {
+        "/stock": {
+            "get": {
+                "tags": [
+                    "Stocks"
+                ],
+                "description": "",
+                "operationId": "getStock",
+                "parameters": [
+                    {
+                        "parameter": "q",
+                        "name": "q",
+                        "in": "query",
+                        "description": "Stock code",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "label": "Stock Code"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Stocks"
+        }
+    ]
+}
